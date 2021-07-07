@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+#wrapper{
+    padding-bottom: 81px;
+    min-height: calc(100% - 81px);
+    position: relative;
+}
+
+div {
+    word-wrap: break-word;
+    line-height: 1.25rem;
+}
+.chat-column {
+    height: 87%;
+    padding: 0.9375rem 0 0.625rem 0;
+    margin: auto;
+    text-align: left;
+    max-width: 25rem;
+    min-width: 9.375rem;
+}
+
+#alert-box{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+
+    .chat-column {
+        padding-top: 4rem;
+    }
+}
